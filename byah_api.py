@@ -20,6 +20,9 @@ def catch_all():
     return '<b>hit /</b>!'
     #return template('<b>hit /</b>!')
 
+@route('/api/*')
+def catch_more():
+    return '<b>hit /api/*</b>!'
 
 
 if __name__ == "__main__":
